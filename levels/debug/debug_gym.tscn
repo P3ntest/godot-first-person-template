@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dou8wwg06del7"]
 
 [ext_resource type="Material" uid="uid://bpnx3j41evtsw" path="res://assets/textures/prototype/prototype_blue.tres" id="1_j5x1f"]
+[ext_resource type="Material" uid="uid://bmlv74gxxtbyq" path="res://assets/textures/prototype/prototype_dark_gray.tres" id="2_os8up"]
 [ext_resource type="Material" uid="uid://dhkt6na1byaly" path="res://assets/textures/prototype/prototype_teal.tres" id="2_pgpi4"]
 [ext_resource type="Material" uid="uid://dwlcqnfuqussg" path="res://assets/textures/prototype/prototype_red.tres" id="3_os8up"]
 [ext_resource type="PackedScene" uid="uid://c1q3j80fb8alh" path="res://src/entities/player/player_character.tscn" id="4_pgpi4"]
@@ -32,7 +33,7 @@ use_collision = true
 size = Vector3(100, 1, 100)
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="." unique_id=1336895447]
-material_override = ExtResource("1_j5x1f")
+material_override = ExtResource("2_os8up")
 use_collision = true
 size = Vector3(100, 1, 100)
 

@@ -60,3 +60,8 @@ func _physics_process(delta: float) -> void:
 func _process(delta: float) -> void:
 	if _current_state:
 		_current_state.process(delta)
+
+func force_transition(new_state_name: String) -> void:
+	var new_state = _get_state(new_state_name)
+	if new_state:
+		_enter_state(new_state)
