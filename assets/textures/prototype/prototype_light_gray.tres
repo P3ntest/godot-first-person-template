@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://darkq84x4n0m"]
+
+[ext_resource type="Texture2D" uid="uid://dj3aoipeyvmsr" path="res://assets/textures/prototype/prototype_light_gray_albedo.png" id="1_iyfpr"]
+[ext_resource type="Texture2D" uid="uid://x047slv2wgow" path="res://assets/textures/prototype/prototype_orm.png" id="2_bsrnm"]
+
+[resource]
+albedo_texture = ExtResource("1_iyfpr")
+roughness_texture = ExtResource("2_bsrnm")
+roughness_texture_channel = 1
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
