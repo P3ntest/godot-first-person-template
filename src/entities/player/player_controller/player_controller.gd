@@ -1,8 +1,9 @@
+@icon ("res://addons/at-icons/node/move.svg")
 class_name PlayerController
 extends Node
 
-@export var character: CharacterBody3D
-@export var camera_controller: PlayerCameraController
+@onready var character: CharacterBody3D = get_parent()
+@onready var camera_controller: PlayerCameraController = %PlayerCameraController
 @export var initial_state: PlayerState
 
 var _current_state: PlayerState

@@ -1,3 +1,4 @@
+@icon ("res://addons/at-icons/node/circle.svg")
 @abstract
 class_name PlayerState
 extends Node

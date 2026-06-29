@@ -1,5 +1,9 @@
 [gd_scene format=3 uid="uid://c1q3j80fb8alh"]
 
+[ext_resource type="Script" uid="uid://cqyqnbb3worg5" path="res://src/entities/player/player_controller/player_controller.gd" id="1_s6pao"]
+[ext_resource type="Script" uid="uid://bej2q3a8pkm7b" path="res://src/entities/player/player_controller/states/player_locomotion_state.gd" id="2_b8iv8"]
+[ext_resource type="Script" uid="uid://dbva4jspkv83s" path="res://src/entities/player/player_controller/player_camera_controller.gd" id="3_qfbsq"]
+
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8j116"]
 radius = 0.23486328
 height = 1.7294922
@@ -14,3 +18,17 @@ shape = SubResource("CapsuleShape3D_8j116")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.369854, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Head" unique_id=523756153]
+
+[node name="PlayerController" type="Node" parent="." unique_id=1179341370 node_paths=PackedStringArray("initial_state")]
+script = ExtResource("1_s6pao")
+initial_state = NodePath("PlayerLocomotionState")
+
+[node name="PlayerLocomotionState" type="Node" parent="PlayerController" unique_id=216238084]
+script = ExtResource("2_b8iv8")
+metadata/_custom_type_script = "uid://bej2q3a8pkm7b"
+
+[node name="PlayerCameraController" type="Node" parent="." unique_id=345014471 node_paths=PackedStringArray("head")]
+unique_name_in_owner = true
+script = ExtResource("3_qfbsq")
+head = NodePath("../Head")
+metadata/_custom_type_script = "uid://dbva4jspkv83s"

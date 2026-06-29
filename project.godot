@@ -13,6 +13,7 @@ config_version=5
 config/name="first-person-template"
 config/description="Authors: Julius (P3ntest) van Voorden"
 config/version="0.1"
+run/main_scene="uid://dou8wwg06del7"
 config/features=PackedStringArray("4.7")
 boot_splash/show_image=false
 config/icon="uid://ds1jtb2uk4en8"
