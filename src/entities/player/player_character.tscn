@@ -34,7 +34,6 @@ script = ExtResource("2_b8iv8")
 metadata/_custom_type_script = "uid://bej2q3a8pkm7b"
 
 [node name="PlayerCameraController" type="Node" parent="." unique_id=345014471 node_paths=PackedStringArray("head")]
-unique_name_in_owner = true
 script = ExtResource("3_qfbsq")
 sensitivity = 0.3
 head = NodePath("../Head")

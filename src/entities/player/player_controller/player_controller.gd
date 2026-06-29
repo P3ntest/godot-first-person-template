@@ -3,14 +3,12 @@ class_name PlayerController
 extends Node
 
 @onready var character: CharacterBody3D = get_parent()
-@onready var camera_controller: PlayerCameraController = %PlayerCameraController
 @export var initial_state: PlayerState
 
 var _current_state: PlayerState
 
 func _register_state(state: PlayerState) -> void:
 	state.character = character
-	state.camera = camera_controller
 
 	state.request_transition.connect(_request_transition)
 

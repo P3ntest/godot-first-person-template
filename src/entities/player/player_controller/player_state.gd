@@ -4,7 +4,6 @@ class_name PlayerState
 extends Node
 
 var character: CharacterBody3D
-var camera: PlayerCameraController
 
 signal request_transition(new_state: String)
 
