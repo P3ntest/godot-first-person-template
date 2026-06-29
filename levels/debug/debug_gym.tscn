@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://dou8wwg06del7"]
+
+[ext_resource type="Material" uid="uid://bpnx3j41evtsw" path="res://assets/textures/prototype/prototype_blue.tres" id="1_j5x1f"]
+[ext_resource type="Material" uid="uid://dhkt6na1byaly" path="res://assets/textures/prototype/prototype_teal.tres" id="2_pgpi4"]
+[ext_resource type="Material" uid="uid://dwlcqnfuqussg" path="res://assets/textures/prototype/prototype_red.tres" id="3_os8up"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_w3ab1"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_cl1ti"]
+sky_material = SubResource("ProceduralSkyMaterial_w3ab1")
+
+[sub_resource type="Environment" id="Environment_cji3g"]
+background_mode = 2
+sky = SubResource("Sky_cl1ti")
+glow_enabled = true
+
+[node name="DebugGym" type="Node3D" unique_id=1073504499]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1605392109]
+environment = SubResource("Environment_cji3g")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=623168698]
+transform = Transform3D(-0.8365164, -0.2888488, 0.4656254, 0.2241439, 0.5950348, 0.77181154, -0.50000006, 0.75, -0.43301263, 0, 0, 0)
+shadow_enabled = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=388110449]
+material_override = ExtResource("1_j5x1f")
+use_collision = true
+size = Vector3(100, 1, 100)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="." unique_id=1336895447]
+material_override = ExtResource("1_j5x1f")
+use_collision = true
+size = Vector3(100, 1, 100)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=714874897]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5532227, 0)
+material_override = ExtResource("2_pgpi4")
+use_collision = true
+size = Vector3(1, 4.1064453, 1)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=912819730]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8808477, 1.245575, 1.74614)
+material_override = ExtResource("3_os8up")
+use_collision = true
+size = Vector3(1.9208984, 1.7893677, 3)

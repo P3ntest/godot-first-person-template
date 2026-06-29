@@ -24,10 +24,15 @@ window/vsync/vsync_mode=0
 [file_customization]
 
 folder_colors={
-"res://addons/": "orange",
+"res://addons/": "red",
 "res://assets/": "green",
+"res://levels/": "yellow",
 "res://src/": "blue"
 }
+
+[global_group]
+
+player=""
 
 [input]
 
