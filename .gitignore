@@ -5,3 +5,7 @@
 
 # Ignore OS-specific files
 .DS_Store
+
+# Dist
+/dist/*
+!/dist/.gdignore

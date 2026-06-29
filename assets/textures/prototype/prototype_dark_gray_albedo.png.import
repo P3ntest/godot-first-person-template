@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://btoe2je16g23c"
 path.s3tc="res://.godot/imported/prototype_dark_gray_albedo.png-5d39222f0b2d1f009e313db90e9ea880.s3tc.ctex"
+path.etc2="res://.godot/imported/prototype_dark_gray_albedo.png-5d39222f0b2d1f009e313db90e9ea880.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/textures/prototype/prototype_dark_gray_albedo.png"
-dest_files=["res://.godot/imported/prototype_dark_gray_albedo.png-5d39222f0b2d1f009e313db90e9ea880.s3tc.ctex"]
+dest_files=["res://.godot/imported/prototype_dark_gray_albedo.png-5d39222f0b2d1f009e313db90e9ea880.s3tc.ctex", "res://.godot/imported/prototype_dark_gray_albedo.png-5d39222f0b2d1f009e313db90e9ea880.etc2.ctex"]
 
 [params]
 
