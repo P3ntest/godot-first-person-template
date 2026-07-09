@@ -8,8 +8,9 @@ This quickstart makes sure you have the project setup and git lfs correctly inst
 
 ```bash
 PROJECT_NAME="my-game"
-bunx degit p3ntest/godot-first-person-template "$PROJECT_NAME"
+git clone --depth 1 https://github.com/p3ntest/godot-first-person-template.git "$PROJECT_NAME"
 cd "$PROJECT_NAME"
+rm -rf .git
 git init
 git lfs install
 git add .
