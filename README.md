@@ -14,5 +14,6 @@ rm -rf .git
 git init
 git lfs install
 git add .
+sed -i 's/^config\/name="first-person-template"/config\/name="'"$PROJECT_NAME"'"/' project.godot
 git commit -m "Initial commit from Godot First Person Template"
 ```
